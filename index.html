@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#0b7a3b">
+<title>يعقوب عبد الغفار — مترشح للمجلس الشعبي البلدي مزاورو</title>
+<meta name="description" content="الموقع الرسمي للمترشح يعقوب عبد الغفار — حزب الكرامة — بلدية مزاورو">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#0b7a3b; --green-d:#064d26; --red:#d3202c; --white:#fff;
+  --ink:#16211b; --muted:#5b6b62; --bg:#f4f8f5; --card:#fff; --line:#e1ebe4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Cairo',Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.8}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:auto;padding:0 18px}
+
+/* NAV */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:62px}
+.brand{font-weight:900;color:var(--green-d);font-size:1.1rem;display:flex;align-items:center;gap:8px}
+.brand i{width:26px;height:26px;border-radius:50%;background:linear-gradient(90deg,var(--green) 50%,#fff 50%);border:2px solid var(--green);position:relative;display:inline-block}
+.brand i::after{content:"";position:absolute;inset:6px;border-radius:50%;background:var(--red)}
+nav ul{display:flex;gap:20px;list-style:none;font-weight:600;font-size:.95rem}
+nav a:hover{color:var(--green)}
+.burger{display:none;background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--green-d)}
+@media(max-width:760px){
+  .burger{display:block}
+  nav ul{position:absolute;top:62px;right:0;left:0;background:#fff;flex-direction:column;gap:0;border-bottom:1px solid var(--line);display:none}
+  nav ul.open{display:flex}
+  nav li a{display:block;padding:12px 20px;border-top:1px solid var(--line)}
+}
+
+/* HERO */
+.hero{position:relative;color:#fff;overflow:hidden;
+  background:linear-gradient(135deg,rgba(6,77,38,.96),rgba(11,122,59,.92)),
+  url('') center/cover}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 15% 20%,rgba(255,255,255,.12),transparent 40%),
+  radial-gradient(circle at 90% 80%,rgba(211,32,44,.25),transparent 45%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;padding-top:50px;padding-bottom:50px}
+.tag{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:4px 14px;border-radius:30px;font-weight:600;font-size:.9rem}
+.hero h1{font-size:clamp(2rem,5.5vw,3.6rem);font-weight:900;line-height:1.25;margin:14px 0 8px}
+.hero h2{font-size:clamp(1.05rem,2.4vw,1.4rem);font-weight:600;opacity:.95}
+.slogan{margin:18px 0 26px;font-size:1.15rem;font-weight:700;border-right:5px solid var(--red);padding-right:14px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 24px;border-radius:12px;font-weight:700;font-family:inherit;cursor:pointer;border:0;font-size:1rem;transition:.2s}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:#b5151f;transform:translateY(-2px)}
+.btn-line{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.7)}
+.btn-line:hover{background:#fff;color:var(--green-d)}
+.photo{position:relative;justify-self:center;width:min(340px,80vw)}
+.photo .frame{aspect-ratio:3/4;border-radius:24px;overflow:hidden;border:6px solid #fff;box-shadow:0 20px 50px rgba(0,0,0,.35);background:#e6efe9;display:grid;place-items:center;color:var(--green-d);font-size:5rem;font-weight:900}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.badge{position:absolute;bottom:-18px;left:-14px;background:var(--red);color:#fff;border:4px solid #fff;border-radius:18px;padding:8px 18px;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,.3)}
+.badge b{display:block;font-size:2.2rem;line-height:1}
+.badge span{font-size:.8rem;font-weight:600}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr;text-align:center}.slogan{border:0;padding:0}.btns{justify-content:center}.photo{order:-1}}
+.flagbar{height:8px;background:linear-gradient(90deg,var(--green) 50%,#fff 50%,#fff 100%)}
+.flagbar::after{content:"";display:block;height:3px;background:var(--red)}
+
+/* SECTIONS */
+section{padding:64px 0}
+.title{text-align:center;margin-bottom:38px}
+.title h3{font-size:clamp(1.5rem,3.5vw,2.1rem);font-weight:900;color:var(--green-d)}
+.title h3::after{content:"";display:block;width:70px;height:5px;border-radius:4px;margin:10px auto 0;background:linear-gradient(90deg,var(--green) 60%,var(--red) 60%)}
+.title p{color:var(--muted);margin-top:8px}
+
+.about{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+.about p{font-size:1.05rem;margin-bottom:14px}
+.facts{display:grid;gap:12px}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;display:flex;justify-content:space-between;gap:10px}
+.fact span{color:var(--muted)}
+.fact b{color:var(--green-d)}
+@media(max-width:820px){.about{grid-template-columns:1fr}}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;transition:.25s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(11,122,59,.14)}
+.card .ic{width:52px;height:52px;border-radius:14px;background:#e7f4ec;display:grid;place-items:center;font-size:1.6rem;margin-bottom:12px}
+.card h4{font-size:1.15rem;color:var(--green-d);margin-bottom:6px}
+.card p{color:var(--muted);font-size:.97rem}
+
+.alt{background:#fff;border-block:1px solid var(--line)}
+
+/* quote band */
+.band{background:linear-gradient(120deg,var(--green-d),var(--green));color:#fff;text-align:center;padding:50px 0}
+.band q{display:block;font-size:clamp(1.2rem,3vw,1.9rem);font-weight:800;max-width:800px;margin:auto;quotes:"«" "»"}
+.band small{display:block;margin-top:10px;opacity:.85}
+
+/* timeline */
+.tl{position:relative;max-width:760px;margin:auto;padding-right:30px}
+.tl::before{content:"";position:absolute;right:9px;top:6px;bottom:6px;width:3px;background:var(--line)}
+.tl-item{position:relative;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-bottom:16px}
+.tl-item::before{content:"";position:absolute;right:-29px;top:22px;width:15px;height:15px;border-radius:50%;background:var(--red);border:3px solid #fff;box-shadow:0 0 0 2px var(--red)}
+.tl-item time{font-size:.85rem;color:var(--red);font-weight:700}
+.tl-item h4{color:var(--green-d)}
+.tl-item p{color:var(--muted);font-size:.96rem}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;max-width:860px;margin:auto}
+.gal figure{border-radius:16px;overflow:hidden;background:#dfe9e3;aspect-ratio:3/4;position:relative;cursor:zoom-in;box-shadow:0 10px 26px rgba(0,0,0,.12)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.gal figure:hover img{transform:scale(1.07)}
+.gal figcaption{position:absolute;inset:auto 0 0 0;padding:20px 12px 8px;color:#fff;font-size:.9rem;background:linear-gradient(transparent,rgba(0,0,0,.7))}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;place-items:center;z-index:100;padding:20px;cursor:zoom-out}
+.lb.on{display:grid}
+.lb img{max-width:100%;max-height:90vh;border-radius:12px}
+
+/* ballot */
+.ballot{max-width:420px;margin:auto;background:#fff;border:2px solid var(--green);border-radius:16px;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.08)}
+.ballot header{position:static;background:var(--green);color:#fff;text-align:center;padding:10px;font-weight:800;border:0;backdrop-filter:none}
+.ballot .row{display:flex;justify-content:space-between;align-items:center;padding:10px 20px;border-bottom:1px solid var(--line);font-weight:700;font-size:1.1rem}
+.ballot .row .box{width:24px;height:24px;border:2px solid #888;border-radius:5px;display:grid;place-items:center;color:var(--red);font-weight:900}
+.ballot .me{background:#fff4f4;color:var(--red)}
+.ballot .me .box{border-color:var(--red)}
+.howto{text-align:center;margin-top:20px;color:var(--muted)}
+
+/* contact */
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;max-width:900px;margin:auto}
+.ct{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;text-align:center;transition:.2s}
+.ct:hover{border-color:var(--green);transform:translateY(-3px)}
+.ct .ic{font-size:1.8rem}
+.ct b{display:block;color:var(--green-d)}
+.ct span{color:var(--muted);font-size:.95rem;direction:ltr;display:inline-block}
+
+footer{background:var(--green-d);color:#d9eadf;text-align:center;padding:28px 0;font-size:.92rem}
+footer b{color:#fff}
+.fade{opacity:0;transform:translateY(24px);transition:.7s}
+.fade.show{opacity:1;transform:none}
+.card ul{list-style:none;margin-top:8px}
+.card li{position:relative;padding-right:22px;color:var(--muted);font-size:.96rem;margin-bottom:4px}
+.card li::before{content:"✓";position:absolute;right:0;color:var(--green);font-weight:900}
+.vis{max-width:760px;margin:auto;display:grid;gap:10px}
+.vis div{background:var(--card);border:1px solid var(--line);border-right:5px solid var(--green);border-radius:12px;padding:10px 18px;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:820px;margin:18px auto 0}
+.chips span{background:#e7f4ec;color:var(--green-d);border-radius:30px;padding:6px 16px;font-size:.92rem;font-weight:600}
+.note{text-align:center;color:var(--muted);font-style:italic;max-width:640px;margin:auto}
+form.f{max-width:620px;margin:auto;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;display:grid;gap:14px}
+form.f label{font-weight:700;color:var(--green-d);display:block;margin-bottom:4px}
+form.f input,form.f textarea,form.f select{width:100%;font-family:inherit;font-size:1rem;padding:10px 14px;border:1.5px solid var(--line);border-radius:10px;background:#fbfdfb}
+form.f input:focus,form.f textarea:focus,form.f select:focus{outline:0;border-color:var(--green)}
+.msg p{font-size:1.12rem;max-width:760px;margin:0 auto 14px;text-align:center}
+.msg p:first-of-type{font-weight:800;color:var(--green-d);font-size:1.3rem}
+nav ul{gap:16px!important;font-size:.9rem!important}
+.photo img{object-position:center top}
+/* ===== poll ===== */
+.pollbar{background:var(--green-d);color:#fff;font-size:.95rem;font-weight:600}
+.pollbar .wrap{display:flex;flex-wrap:wrap;gap:6px 22px;justify-content:center;align-items:center;padding-top:7px;padding-bottom:7px}
+.pollbar b{color:#ffd9dc;font-size:1.05rem}
+.pollbar .sep{opacity:.4}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;place-items:center;z-index:200;padding:18px}
+.modal.on{display:grid}
+.mbox{background:#fff;border-radius:22px;max-width:420px;width:100%;padding:28px 24px;text-align:center;box-shadow:0 25px 60px rgba(0,0,0,.4);border-top:8px solid var(--green);animation:pop .35s ease}
+@keyframes pop{from{transform:scale(.9);opacity:0}to{transform:none;opacity:1}}
+.mbox h4{font-size:1.5rem;font-weight:900;color:var(--green-d)}
+.mbox p{margin:8px 0 18px;color:var(--muted)}
+.vbtns{display:flex;gap:12px;justify-content:center}
+.vbtn{flex:1;padding:14px 10px;border-radius:14px;font-family:inherit;font-size:1.2rem;font-weight:800;cursor:pointer;border:2px solid;transition:.2s}
+.vbtn.yes{background:var(--green);border-color:var(--green);color:#fff}
+.vbtn.yes:hover{background:var(--green-d)}
+.vbtn.no{background:#fff;border-color:var(--red);color:var(--red)}
+.vbtn.no:hover{background:var(--red);color:#fff}
+.vbtn:disabled{opacity:.5;cursor:wait}
+.later{display:inline-block;margin-top:14px;background:none;border:0;color:var(--muted);font-family:inherit;cursor:pointer;text-decoration:underline}
+.pollbox{max-width:520px;margin:auto;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;text-align:center}
+.pollbox h4{font-size:1.25rem;color:var(--green-d);margin-bottom:14px}
+.meter{height:16px;border-radius:10px;background:#f3d2d4;overflow:hidden;margin:18px 0 6px}
+.meter i{display:block;height:100%;width:0;background:var(--green);transition:width .6s}
+.mlabels{display:flex;justify-content:space-between;font-weight:700;font-size:.95rem}
+.mlabels .y{color:var(--green)}.mlabels .n{color:var(--red)}
+.pollnote{font-size:.82rem;color:var(--muted);margin-top:14px}
+.thanks{font-weight:800;color:var(--green-d);font-size:1.1rem}
+/* ===== axes ===== */
+.axes{background:linear-gradient(#eaf5ee,#fff)}
+.axis{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;margin-bottom:26px;box-shadow:0 10px 30px rgba(11,122,59,.07)}
+.axis.rev .axis-media{order:2}
+.axis.noimg{grid-template-columns:1fr}
+.axis-media{display:grid;gap:10px;align-content:start}
+.axis-img{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:var(--r,4/3);cursor:zoom-in;background:#dfe9e3;margin:0}
+.axis-img img{width:100%;height:100%;object-fit:cover;object-position:var(--pos,center);display:block;transition:.4s}
+.axis-img:hover img{transform:scale(1.05)}
+.axis-img figcaption{position:absolute;inset:auto 0 0 0;padding:18px 12px 6px;font-size:.8rem;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.7))}
+.axis-ph{aspect-ratio:4/3;border-radius:16px;background:linear-gradient(135deg,var(--green-d),var(--green));display:grid;place-items:center;font-size:5.5rem}
+.axis-no{display:inline-block;background:var(--red);color:#fff;border-radius:30px;padding:2px 16px;font-weight:800;font-size:.85rem}
+.axis h4{font-size:clamp(1.25rem,2.6vw,1.6rem);font-weight:900;color:var(--green-d);margin:8px 0 10px;line-height:1.5}
+.axis p{margin-bottom:8px}
+.axis ul{list-style:none;margin:10px 0}
+.axis li{position:relative;padding-right:28px;margin-bottom:8px;font-weight:600}
+.axis li::before{content:"✔";position:absolute;right:0;color:var(--green);font-weight:900}
+.axis .outro{border-right:5px solid var(--red);background:#f3faf5;padding:10px 14px;border-radius:10px;font-weight:700;color:var(--green-d);margin-top:12px}
+.axis .ask{margin-top:12px;color:var(--muted)}
+.axis .ask a{color:var(--red);font-weight:700;text-decoration:underline}
+.pledge{background:linear-gradient(120deg,var(--green-d),var(--green));color:#fff;border-radius:20px;padding:26px 22px;text-align:center;font-size:1.2rem;font-weight:800}
+.pledge small{display:block;margin-top:8px;font-weight:600;opacity:.9;font-size:.95rem}
+@media(max-width:820px){.axis{grid-template-columns:1fr;padding:16px}.axis.rev .axis-media{order:0}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand"><i></i><span id="navName"></span></a>
+    <button class="burger" aria-label="القائمة" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+    <nav><ul id="menu">
+      <li><a href="#about">من أنا</a></li>
+      <li><a href="#axes">البرنامج</a></li>
+      <li><a href="#activities">النشاطات</a></li>
+      <li><a href="#gallery">الصور</a></li>
+      <li><a href="#vote">كيف تنتخب</a></li>
+      <li><a href="#concerns">انشغالاتكم</a></li>
+      <li><a href="#contact">اتصل بنا</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<div class="pollbar" id="pollbar"><div class="wrap">
+  <span>🗳️ عدد المشاركين في الاستطلاع: <b id="pbTotal">…</b></span><span class="sep">|</span>
+  <span>👍 نعم: <b id="pbYes">…</b></span><span class="sep">|</span>
+  <span>👎 لا: <b id="pbNo">…</b></span>
+</div></div>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <span class="tag" id="heroTag"></span>
+      <h1 id="heroName"></h1>
+      <h2 id="heroSub"></h2>
+      <p class="slogan" id="heroSlogan"></p>
+      <div class="btns">
+        <a class="btn btn-red" href="#vote">كيف تنتخب؟</a>
+        <a class="btn btn-line" href="#axes">اطّلع على البرنامج</a>
+      </div>
+    </div>
+    <div class="photo">
+      <div class="frame" id="photoFrame"><img id="heroImg" alt="صورة المترشح" onerror="this.remove();document.getElementById('photoFrame').textContent='ي'"></div>
+      <div class="badge"><b id="badgeNum"></b><span>المترشح رقم</span></div>
+    </div>
+  </div>
+</div>
+<div class="flagbar"></div>
+
+<section id="about"><div class="wrap fade">
+  <div class="title"><h3>من أنا</h3></div>
+  <div class="about">
+    <div id="aboutText"></div>
+    <div class="facts" id="facts"></div>
+  </div>
+</div></section>
+
+<section id="vision" class="alt"><div class="wrap fade">
+  <div class="title"><h3>الرؤية والأهداف</h3><p>رؤية المترشح للمساهمة في خدمة بلدية مزاورو</p></div>
+  <div class="vis" id="visionList"></div>
+</div></section>
+
+<div class="band"><div class="wrap fade">
+  <q id="bandQuote"></q>
+  <small id="bandSmall"></small>
+</div></div>
+
+<section id="axes" class="axes"><div class="wrap">
+  <div class="title"><h3>محاور برنامجي الخمسة</h3><p>ما أطلبه وأترافع عليه لبلديتنا… بالتفصيل</p></div>
+  <div id="axesList"></div>
+  <div class="pledge" id="pledge"></div>
+</div></section>
+
+<section id="program"><div class="wrap fade">
+  <div class="title"><h3>برنامجي</h3><p>التزامات واضحة… تُقاس بالأعمال لا بالأقوال</p></div>
+  <div class="grid" id="programGrid"></div>
+</div></section>
+
+<section id="values" class="alt"><div class="wrap fade">
+  <div class="title"><h3>المبادئ التي يقوم عليها العمل</h3></div>
+  <div class="grid" id="valuesGrid"></div>
+</div></section>
+
+<section id="activities"><div class="wrap fade">
+  <div class="title"><h3>نشاطات ومحطات</h3></div>
+  <div class="tl" id="timeline"></div>
+</div></section>
+
+<section id="gallery"><div class="wrap fade">
+  <div class="title"><h3>الملصقات والصور</h3><p>اضغط على الصورة لعرضها كاملة</p></div>
+  <div class="gal" id="galleryGrid"></div>
+</div></section>
+
+<section id="vote" class="alt"><div class="wrap fade">
+  <div class="title"><h3>كيف تنتخب؟</h3></div>
+  <div class="ballot" id="ballot"></div>
+  <p class="howto" id="howto"></p>
+</div></section>
+
+<section id="poll" class="alt"><div class="wrap fade">
+  <div class="title"><h3>استطلاع رأي</h3><p>شاركنا رأيك — صوت واحد لكل متصفح</p></div>
+  <div class="pollbox">
+    <h4>هل تدعم المترشح يعقوب عبد الغفار؟</h4>
+    <div id="pollVote" class="vbtns">
+      <button class="vbtn yes" onclick="vote('yes')">👍 نعم</button>
+      <button class="vbtn no" onclick="vote('no')">👎 لا</button>
+    </div>
+    <p class="thanks" id="pollThanks" hidden>شكراً لمشاركتك في الاستطلاع ✅</p>
+    <div class="meter"><i id="meterFill"></i></div>
+    <div class="mlabels"><span class="y">نعم <span id="pcYes">0%</span></span><span>المجموع: <span id="pcTotal">0</span></span><span class="n">لا <span id="pcNo">0%</span></span></div>
+    <p class="pollnote">هذا استطلاع رأي غير رسمي، ولا يمثل نتيجة الانتخابات.</p>
+  </div>
+</div></section>
+
+<section id="concerns"><div class="wrap fade">
+  <div class="title"><h3>انشغالات المواطنين</h3><p>المواطن شريك في تحديد احتياجات البلدية — أرسل اقتراحك أو انشغالك</p></div>
+  <form class="f" id="concernForm" onsubmit="sendConcern(event)">
+    <div><label for="cName">الاسم (اختياري)</label><input id="cName" autocomplete="name"></div>
+    <div><label for="cPlace">الحي / المنطقة</label><input id="cPlace" required></div>
+    <div><label for="cType">الموضوع</label>
+      <select id="cType"><option>النظافة والبيئة</option><option>الطرقات والإنارة</option><option>المدارس والمرافق</option><option>التنمية المحلية</option><option>خدمة المواطن</option><option>أخرى</option></select></div>
+    <div><label for="cText">انشغالك أو اقتراحك</label><textarea id="cText" rows="4" required></textarea></div>
+    <button class="btn btn-red" type="submit">إرسال</button>
+  </form>
+</div></section>
+
+<section id="message" class="alt"><div class="wrap fade msg">
+  <div class="title"><h3>رسالة المترشح</h3></div>
+  <div id="messageText"></div>
+</div></section>
+
+<section id="contact"><div class="wrap fade">
+  <div class="title"><h3>تواصل معنا</h3><p>صوتك واقتراحاتك تهمّنا</p></div>
+  <div class="contact" id="contactGrid"></div>
+  <div style="text-align:center;margin-top:26px">
+    <button class="btn btn-red" onclick="share()">📤 شارك الموقع</button>
+  </div>
+</div></section>
+</main>
+
+<div class="modal" id="pollModal" role="dialog" aria-modal="true" aria-labelledby="pmTitle">
+  <div class="mbox">
+    <h4 id="pmTitle">رأيك يهمّنا 🇩🇿</h4>
+    <p>هل تدعم المترشح <b>يعقوب عبد الغفار</b>؟</p>
+    <div class="vbtns" id="modalBtns">
+      <button class="vbtn yes" onclick="vote('yes')">👍 نعم</button>
+      <button class="vbtn no" onclick="vote('no')">👎 لا</button>
+    </div>
+    <button class="later" onclick="closeModal()">لاحقاً</button>
+  </div>
+</div>
+
+<div class="lb" id="lb" onclick="this.classList.remove('on')"><img id="lbImg" alt=""></div>
+
+<footer><div class="wrap" id="footer"></div></footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script>
+/* ============================================================
+   ✏️ عدّل هنا فقط — كل محتوى الموقع في هذا الكائن
+   الأماكن المكتوب فيها [ ... ] هي نصوص مؤقتة يجب استبدالها
+   ============================================================ */
+const SITE = {
+  name: "يعقوب عبد الغفار",
+  party: "حزب الكرامة",
+  partyNumber: 12,
+  candidateNumber: 15,
+  municipality: "بلدية مزاورو",
+  election: "المجلس الشعبي البلدي",
+  photo: "images/candidate.jpg",     // ضع صورة المترشح بهذا الاسم داخل مجلد images
+  slogan: "معاً نبني بلديتنا",
+
+  about: [
+    "يعقوب عبد الغفار، مترشح لعضوية المجلس الشعبي البلدي ببلدية مزاورو، ضمن حزب الكرامة، القائمة رقم 12.",
+    "يؤمن بأن البلدية ليست وسيلة لتحقيق المصالح الشخصية، بل هي مسؤولية وأمانة تتطلب العمل والاجتهاد والتفاني في خدمة المواطنين.",
+    "تقوم رؤيته على العمل الجماعي وتوحيد الجهود، والاستماع لانشغالات المواطنين، والمساهمة في إيجاد حلول للمشاكل اليومية التي تمس حياة سكان البلدية."
+  ],
+  facts: [
+    ["الاسم", "يعقوب عبد الغفار"],
+    ["الحزب", "حزب الكرامة"],
+    ["رقم الحزب", "12"],
+    ["رقم المترشح", "15"],
+    ["البلدية", "مزاورو"],
+    ["الترشح لـ", "المجلس الشعبي البلدي"]
+  ],
+
+  vision: [
+    "جعل خدمة المواطن أولوية في العمل البلدي.",
+    "تعزيز الشفافية وتحمل المسؤولية.",
+    "الاستماع إلى انشغالات المواطنين ومتابعتها.",
+    "تشجيع العمل الجماعي وتوحيد الجهود.",
+    "المساهمة في تحسين المحيط والخدمات المحلية.",
+    "الاهتمام بمختلف أحياء ومناطق البلدية.",
+    "العمل على إيجاد حلول واقعية للمشاكل المطروحة."
+  ],
+
+  quote: "البلدية ليست منصة لتحقيق المصالح الشخصية، بل هي مسؤولية وأمانة وعمل واجتهاد.",
+  quoteSmall: "خدمة المواطن وخدمة البلدية تكون بالعمل الميداني والإنجازات، لا بالوعود والشعارات.",
+
+  program: [
+    {icon:"🌿", title:"النظافة والبيئة", items:[
+      "متابعة نظافة الأحياء والشوارع.","تحسين عمليات جمع النفايات.","الاهتمام بالمساحات الخضراء.","المحافظة على المحيط والبيئة."]},
+    {icon:"🛣️", title:"الطرقات والإنارة العمومية", items:[
+      "متابعة حالة الطرقات والمسالك.","المطالبة بصيانة الطرقات المتضررة.","تحسين الإنارة العمومية.","متابعة احتياجات الأحياء في هذا المجال."]},
+    {icon:"🏫", title:"المدارس والمرافق العمومية", items:[
+      "متابعة وضعية المدارس والمرافق المحلية.","رصد النقائص التي تحتاج إلى صيانة.","نقل انشغالات المواطنين المتعلقة بالمرافق العمومية."]},
+    {icon:"🏗️", title:"التنمية المحلية", items:[
+      "الاهتمام باحتياجات مختلف مناطق البلدية.","المساهمة في اقتراح مشاريع تنموية.","متابعة احتياجات الأحياء والمناطق السكنية."]},
+    {icon:"🤝", title:"خدمة المواطن", items:[
+      "الاستماع إلى انشغالات السكان.","استقبال الاقتراحات والشكاوى.","متابعة الملفات المطروحة.","تسهيل التواصل بين المواطن والبلدية."]}
+  ],
+
+  // محاور البرنامج الخمسة — images: صور المحور (اترك [] إن لم توجد صورة)
+  axes: [
+    {n:1, icon:"👩‍🎨", title:"المرأة الماكثة في الدار: طاقة تنتظر فرصتها",
+     intro:["المرأة الماكثة في الدار تستحق فرصة باش تبدع وتنتج وتحقق مدخولها الخاص.",
+            "في بلديتنا كاين نساء عندهم مواهب ومنتجات مميزة بصح ما لقاوش الفرصة باش يعرفوا الناس بخدمتهم.",
+            "ضمن برنامجي كمترشح لعضوية المجلس الشعبي البلدي لبلدية مزاورو نسعى لدعم المرأة الماكثة في الدار والحرفيات من خلال:"],
+     items:["مساعدتها على المشاركة في المعارض المحلية والولائية والوطنية باش تعرّف بمنتجاتها وتسوقها.",
+            "العمل على تسهيل نقلها ونقل منتجاتها للمشاركة في هاذ المعارض.",
+            "مرافقتها وتوجيهها للاستفادة من برامج الدعم والتمويل لي توفرها الدولة لإنشاء مشاريع صغيرة."],
+     outro:"هدفي نعطي للمرأة فرصتها باش تقدر تبرز قدراتها ويكون عندها حضور ومكانة في المجتمع. دعم المرأة هو دعم للعائلة ومساهمة في تنمية بلديتنا.",
+     images:[{src:"images/axis1-women.jpg", cap:"ركن الوكالة الوطنية لتسيير القرض المصغر", pos:"center 12%", ratio:"4/5"}]},
+
+    {n:2, icon:"🤲", title:"أطفالنا ذوو الاحتياجات الخاصة: أمانة في أعناقنا",
+     intro:["ربي يحفظ أطفالنا ويشفي كل مريض، ويقوي كل وليّ يسعى من أجل طفله.",
+            "ضمن برنامجي كمترشح لعضوية المجلس الشعبي البلدي لبلدية مزاورو نسعى للاهتمام بذوي الاحتياجات الخاصة من خلال:"],
+     items:["الدفاع عن حق أطفال مزاورو وضاية خلفية ومرسط في الاستفادة من خدمات المركز النفسي البيداغوجي بتلاغ.",
+            "المطالبة بتوفير النقل لهؤلاء الأطفال.",
+            "المطالبة بتحسين ظروف التكفل والتأهيل.",
+            "مرافقة الأولياء ومساندتهم."],
+     outro:"بُعد المسافة ما لازمش يحرم أي طفل من حقه في الرعاية والتأهيل. دعم هذا الطفل هو دعم لعائلة كاملة.",
+     images:[{src:"images/axis2-children.jpg", cap:"صورة توضيحية", pos:"center 35%", ratio:"3/2"}]},
+
+    {n:3, icon:"🏋️", title:"الشباب والرياضة: مساحات آمنة لشبابنا وبناتنا",
+     intro:["ضمن برنامجي كمترشح لعضوية المجلس الشعبي البلدي لبلدية مزاورو نسعى نطالب بمساحات رياضية آمنة للشباب والبنات، ومن اقتراحاتي:"],
+     items:["إنشاء قاعة كمال الأجسام واللياقة البدنية (Fitness) في دار الشباب بمزاورو وفي قرية ضاية خلفية، مع تخصيص أوقات للبنات باش يستافدو منها بكل راحة.",
+            "تخصيص جزء من المساحات الخضراء التابعة لمحافظة الغابات لي ما يتستغلوش حالياً، باش نديروا فضاء للكاليستينيكس (Calisthenics) بالتنسيق مع الجهات المختصة وبعد الحصول على التراخيص اللازمة.",
+            "تجهيز هاذ الفضاءات بالمعدات الرياضية، مع الإنارة والحراسة باش يكونوا آمنين وتبقى التجهيزات محفوظة."],
+     outro:"ما نفكروش غير في شباب اليوم، بل حتى في أولادنا باش يكبروا والرياضة جزء من حياتهم اليومية. ما نطلبوش المستحيل، نطلبوا غير استغلال الإمكانيات الموجودة في بلديتنا لخدمة شبابنا وبناتنا وأولادنا.",
+     images:[{src:"images/axis3-sport.jpg", cap:"صورة توضيحية — فضاء كاليستينيكس", pos:"center 45%", ratio:"3/4"}]},
+
+    {n:4, icon:"🏫", title:"متوسطة لبلديتنا: مطلب اليوم، مكسب الأجيال القادمة",
+     intro:["التعليم استثمار في مستقبل أولادنا، ومطلب اليوم يمكن يكون مكسب للأجيال الجاية.",
+            "من بين النقاط لي نحب ندافع عليها ضمن برنامجي كمترشح لعضوية المجلس الشعبي البلدي لبلدية مزاورو المطالبة بإنجاز متوسطة في منطقتنا، باش:"],
+     items:["نخففوا معاناة التلاميذ مع التنقل.",
+            "نحدوا من الاكتظاظ داخل المؤسسات التربوية.",
+            "نوفروا ظروف تمدرس أحسن لأولادنا."],
+     outro:"أنا نؤمن بلي المطالب التنموية ما لازمش تكون غير لواش نحتاجوه اليوم، بل لازم نفكروا حتى في مستقبل الأجيال الجاية. وحتى لو المشروع ما تحققش قريب، المطالبة بيه وطرح ملفه ومتابعته من اليوم يفتح الباب لتجسيده مستقبلاً ويستفيد منه أولادنا والأجيال لي تجي من بعدهم. التعليم ماشي غير خدمة، هو أساس بناء مستقبل أحسن لبلديتنا.",
+     images:[{src:"images/axis4-school.jpg", cap:"صورة توضيحية — مؤسسة تربوية", pos:"center", ratio:"16/10"},
+             {src:"images/axis4-class.jpg", cap:"صورة توضيحية", pos:"center 40%", ratio:"16/10"}]},
+
+    {n:5, icon:"🚑", title:"أبسط الحقوق الصحية: علاش ما زالت مطلباً؟",
+     intro:["سيارة الإسعاف من أبسط الضروريات لحماية أرواح المواطنين والتدخل في الحالات الاستعجالية، وما يلزمش تبقى مطلباً وكأنه مستحيل.",
+            "وهناك خدمة أخرى ما يعرفهاش بزاف من الناس: النقل الصحي للمرضى، لي يسمح لأصحاب المواعيد الطبية وحصص العلاج المنتظمة بالتنقل نحو المستشفيات ومراكز العلاج، بلا ما يكريو طاكسي في كل مرة.",
+            "وللأسف، على مستوى دائرة تلاغ توجد سيارة واحدة فقط لهذه الخدمة، وهي ما تشملش بلديتنا.",
+            "ضمن برنامجي كمترشح لعضوية المجلس الشعبي البلدي لبلدية مزاورو، أطالب وأترافع بالتنسيق مع الجهات المعنية وهيئات الضمان الاجتماعي والمتعاملين الخواص المتعاقدين معها، من أجل:"],
+     items:["توفير سيارة إسعاف لبلديتنا.",
+            "توسيع خدمة النقل الصحي لتشمل مرضانا.",
+            "ضمان استفادة المرضى أصحاب المواعيد والعلاج المنتظم من هذه الخدمة نحو مختلف الوجهات العلاجية."],
+     outro:"صحة المواطن وكرامته ماشي منّة من حد، وسيارة الإسعاف والنقل الصحي ضرورة وحق يستحقه سكان بلديتنا والقرى التابعة لها.",
+     ask:"واش رايكم؟ كيفاش تتنقلوا للعيادة أو المستشفى كي تحتاجوا؟ شاركونا في قسم «انشغالات المواطنين».",
+     images:[{src:"images/axis5-ambulance.jpg", cap:"صورة توضيحية — سيارات إسعاف", pos:"center", ratio:"4/3"}]}
+  ],
+  axesPledge: "هذه محاور برنامجي، وأنا ملتزم بالترافع عليها كلها كعضو — ماشي طالب رئاسة، بصح مقعد ندافع منه على مطالبكم.",
+
+  values: [
+    {icon:"🔍", title:"الشفافية", text:"التعامل بوضوح وتحمل المسؤولية."},
+    {icon:"🛡️", title:"الأمانة", text:"اعتبار المسؤولية البلدية تكليفاً لخدمة المواطنين."},
+    {icon:"👷", title:"العمل الميداني", text:"الاهتمام بالمشاكل الموجودة على أرض الواقع."},
+    {icon:"🧩", title:"التعاون", text:"توحيد الجهود والعمل بروح جماعية."},
+    {icon:"🗣️", title:"المشاركة", text:"إعطاء المواطنين فرصة للتعبير عن احتياجاتهم ومقترحاتهم."}
+  ],
+
+  // النشاطات الفعلية: أضفها هنا بعد توثيقها بالصور والتاريخ
+  // مثال: {date:"2026-11-20", title:"لقاء مع سكان حي ...", text:"..."}
+  activities: [],
+  activityTypes: [
+    "اللقاءات مع المواطنين والاستماع لانشغالاتهم","الزيارات الميدانية لمختلف أحياء البلدية",
+    "متابعة النقائص والاحتياجات المحلية","الاجتماعات واللقاءات المتعلقة بالشأن البلدي",
+    "المبادرات والأنشطة التطوعية","عرض المقترحات المتعلقة بتحسين الخدمات المحلية"
+  ],
+
+  message: [
+    "البلدية ليست منصة لتحقيق المصالح الشخصية، بل هي مسؤولية وأمانة وعمل واجتهاد.",
+    "إن خدمة المواطن وخدمة البلدية تكون بالعمل الميداني والإنجازات، لا بالوعود والشعارات.",
+    "نعمل على ترسيخ ثقافة التعاون وتوحيد الجهود، والاستماع لانشغالات المواطنين، والمساهمة في بناء بلدية تستجيب لتطلعات سكانها."
+  ],
+
+  // استقبال انشغالات المواطنين (بدون قاعدة بيانات): تصل عبر واتساب أو البريد
+  whatsapp: "",   // مثال: "213555123456" (بدون + ولا مسافات)
+  email: "",      // مثال: "name@gmail.com"
+
+  // ضع الصور داخل مجلد images ثم اكتب أسماءها هنا
+  gallery: [
+    {src:"images/poster-1.jpg", caption:"البلدية مسؤولية وأمانة"},
+    {src:"images/poster-2.jpg", caption:"انتخبوا — معاً نبني بلديتنا"},
+    // أضف المزيد: {src:"images/1.jpg", caption:"لقاء مع سكان الحي"},
+  ],
+
+  contacts: [
+    {icon:"📞", label:"الهاتف", value:"[0X XX XX XX XX]", href:""},
+    {icon:"💬", label:"واتساب", value:"[رقم واتساب]", href:""},
+    {icon:"📘", label:"فيسبوك", value:"[رابط الصفحة]", href:""},
+    {icon:"📍", label:"المقر", value:"[عنوان مقر الحملة]", href:""}
+  ]
+};
+/* ============================ نهاية التعديل ============================ */
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+document.title = `${SITE.name} — مترشح ${SITE.election} ${SITE.municipality}`;
+$('navName').textContent = SITE.name;
+$('heroTag').textContent = `${SITE.party} · القائمة ${SITE.partyNumber}`;
+$('heroName').textContent = SITE.name;
+$('heroSub').textContent = `مترشح لـ${SITE.election} — ${SITE.municipality}`;
+$('heroSlogan').textContent = SITE.slogan;
+$('badgeNum').textContent = SITE.candidateNumber;
+$('heroImg').src = SITE.photo;
+
+$('aboutText').innerHTML = SITE.about.map(p => `<p>${esc(p)}</p>`).join('');
+$('facts').innerHTML = SITE.facts.map(([k,v]) => `<div class="fact"><span>${esc(k)}</span><b>${esc(v)}</b></div>`).join('');
+$('bandQuote').textContent = SITE.quote;
+$('bandSmall').textContent = SITE.quoteSmall;
+
+$('programGrid').innerHTML = SITE.program.map(p =>
+  `<div class="card"><div class="ic">${p.icon}</div><h4>${esc(p.title)}</h4><ul>${p.items.map(i=>`<li>${esc(i)}</li>`).join('')}</ul></div>`).join('');
+
+$('axesList').innerHTML = SITE.axes.map((a, i) => {
+  const imgs = a.images || [];
+  const media = imgs.length
+    ? imgs.map(m => `<figure class="axis-img" style="--r:${esc(m.ratio||'4/3')};--pos:${esc(m.pos||'center')}" onclick="openLb('${esc(m.src)}')"><img src="${esc(m.src)}" alt="${esc(m.cap||a.title)}" loading="lazy" onerror="this.closest('figure').style.display='none'">${m.cap?`<figcaption>${esc(m.cap)}</figcaption>`:''}</figure>`).join('')
+    : `<div class="axis-ph">${a.icon}</div>`;
+  return `<article class="axis fade${i%2?' rev':''}">
+    <div class="axis-media">${media}</div>
+    <div>
+      <span class="axis-no">المحور ${a.n} من ${SITE.axes.length}</span>
+      <h4>${a.icon} ${esc(a.title)}</h4>
+      ${a.intro.map(t=>`<p>${esc(t)}</p>`).join('')}
+      <ul>${a.items.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>
+      <p class="outro">${esc(a.outro)}</p>
+      ${a.ask?`<p class="ask">${esc(a.ask).replace('«انشغالات المواطنين»','<a href="#concerns">«انشغالات المواطنين»</a>')}</p>`:''}
+    </div></article>`;
+}).join('');
+$('pledge').textContent = SITE.axesPledge;
+
+$('visionList').innerHTML = SITE.vision.map(v => `<div>${esc(v)}</div>`).join('');
+$('valuesGrid').innerHTML = SITE.values.map(p =>
+  `<div class="card"><div class="ic">${p.icon}</div><h4>${esc(p.title)}</h4><p>${esc(p.text)}</p></div>`).join('');
+$('messageText').innerHTML = SITE.message.map(m => `<p>${esc(m)}</p>`).join('');
+
+if (SITE.activities.length) {
+  $('timeline').innerHTML = SITE.activities.map(a =>
+    `<div class="tl-item"><time>${esc(a.date)}</time><h4>${esc(a.title)}</h4><p>${esc(a.text)}</p></div>`).join('');
+} else {
+  $('timeline').style.cssText = 'padding:0;max-width:none';
+  $('timeline').innerHTML = `<p class="note">فضاء مخصص لنشر النشاطات والخرجات الميدانية واللقاءات، مع توثيق كل نشاط بالصور والتاريخ والتفاصيل. ستُضاف النشاطات هنا قريباً.</p>
+    <div class="chips">${SITE.activityTypes.map(t=>`<span>${esc(t)}</span>`).join('')}</div>`;
+}
+
+function sendConcern(e){
+  e.preventDefault();
+  const txt = `انشغال مواطن\nالاسم: ${$('cName').value||'—'}\nالحي: ${$('cPlace').value}\nالموضوع: ${$('cType').value}\n${$('cText').value}`;
+  if (SITE.whatsapp) window.open('https://wa.me/'+SITE.whatsapp+'?text='+encodeURIComponent(txt),'_blank');
+  else if (SITE.email) location.href = 'mailto:'+SITE.email+'?subject='+encodeURIComponent('انشغال مواطن')+'&body='+encodeURIComponent(txt);
+  else alert('سيتم تفعيل الإرسال قريباً.');
+}
+
+if (SITE.gallery.length) {
+  $('galleryGrid').innerHTML = SITE.gallery.map(g =>
+    `<figure onclick="openLb('${esc(g.src)}')"><img src="${esc(g.src)}" alt="${esc(g.caption||'')}" loading="lazy" onerror="this.closest('figure').style.display='none'">${g.caption?`<figcaption>${esc(g.caption)}</figcaption>`:''}</figure>`).join('');
+} else {
+  $('galleryGrid').innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--muted)">سيتم إضافة الصور قريباً.</p>';
+}
+function openLb(src){ $('lbImg').src = src; $('lb').classList.add('on'); }
+
+// نموذج ورقة التصويت التوضيحي
+const rows = [10,11,12,13,14,15,16];
+$('ballot').innerHTML = `<header>اختيار المترشح</header>` + rows.map(n =>
+  n === SITE.candidateNumber
+  ? `<div class="row me"><span>${n} — ${esc(SITE.name)}</span><span class="box">✕</span></div>`
+  : `<div class="row"><span>${n}</span><span class="box"></span></div>`).join('');
+$('howto').textContent = `ضع علامة ✕ أمام المترشح رقم ${SITE.candidateNumber} — ${SITE.name} — ${SITE.party} (${SITE.partyNumber}).`;
+
+if (SITE.whatsapp) SITE.contacts.forEach(c => { if(c.label==='واتساب'){ c.href='https://wa.me/'+SITE.whatsapp; c.value='+'+SITE.whatsapp; } });
+if (SITE.email) SITE.contacts.push({icon:"✉️", label:"البريد", value:SITE.email, href:'mailto:'+SITE.email});
+$('contactGrid').innerHTML = SITE.contacts.map(c => {
+  const tag = c.href ? 'a' : 'div';
+  const attr = c.href ? ` href="${esc(c.href)}" target="_blank" rel="noopener"` : '';
+  return `<${tag} class="ct"${attr}><div class="ic">${c.icon}</div><b>${esc(c.label)}</b><span>${esc(c.value)}</span></${tag}>`;
+}).join('');
+
+$('footer').innerHTML = `<b>${esc(SITE.name)}</b> — ${esc(SITE.party)} — ${esc(SITE.municipality)}<br>© ${new Date().getFullYear()} جميع الحقوق محفوظة`;
+
+function share(){
+  const data = {title: document.title, text: SITE.slogan, url: location.href};
+  if (navigator.share) navigator.share(data).catch(()=>{});
+  else window.open('https://wa.me/?text=' + encodeURIComponent(data.text + ' ' + data.url), '_blank');
+}
+
+/* ================= استطلاع الرأي (Firebase Realtime Database) ================= */
+const FIREBASE_CONFIG = {
+  apiKey: "AIzaSyCuoPDlAgCluTkmE7eP1jvJPCXgXPkRibQ",
+  authDomain: "abdelgh-fab82.firebaseapp.com",
+  databaseURL: "https://abdelgh-fab82-default-rtdb.firebaseio.com",
+  projectId: "abdelgh-fab82",
+  storageBucket: "abdelgh-fab82.firebasestorage.app",
+  messagingSenderId: "809363464350",
+  appId: "1:809363464350:web:8c3bcdba887f1144229b8f"
+};
+const VOTED_KEY = 'poll_voted_v1', POPUP_KEY = 'poll_popup_seen_v1';
+const store = {
+  get(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } },
+  set(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+};
+let db = null;
+try { firebase.initializeApp(FIREBASE_CONFIG); db = firebase.database(); }
+catch(e){ console.warn('Firebase init failed', e); }
+
+const nf = n => Number(n).toLocaleString('ar-DZ-u-nu-latn');
+function renderCounts(y, n){
+  const t = y + n, py = t ? Math.round(y*100/t) : 0;
+  $('pbTotal').textContent = nf(t); $('pbYes').textContent = nf(y); $('pbNo').textContent = nf(n);
+  $('pcTotal').textContent = nf(t);
+  $('pcYes').textContent = py + '%'; $('pcNo').textContent = (t ? 100-py : 0) + '%';
+  $('meterFill').style.width = (t ? py : 0) + '%';
+}
+function countsUnavailable(){ ['pbTotal','pbYes','pbNo'].forEach(i => $(i).textContent = '—'); }
+
+if (db) {
+  db.ref('poll').on('value',
+    snap => { const v = snap.val() || {}; renderCounts(+v.yes || 0, +v.no || 0); },
+    err => { console.warn(err); countsUnavailable(); });
+} else countsUnavailable();
+
+function updatePollUI(){
+  const voted = !!store.get(VOTED_KEY);
+  $('pollVote').hidden = voted;
+  $('pollThanks').hidden = !voted;
+}
+function openModal(){ $('pollModal').classList.add('on'); }
+function closeModal(){ $('pollModal').classList.remove('on'); }
+
+function vote(choice){
+  if (store.get(VOTED_KEY)) { updatePollUI(); closeModal(); return; }
+  if (!db) { alert('تعذر الاتصال بالخادم حالياً، حاول لاحقاً.'); return; }
+  document.querySelectorAll('.vbtn').forEach(b => b.disabled = true);
+  db.ref('poll/' + choice).transaction(cur => (cur || 0) + 1, (err, committed) => {
+    document.querySelectorAll('.vbtn').forEach(b => b.disabled = false);
+    if (err || !committed) { alert('تعذر تسجيل صوتك، حاول لاحقاً.'); return; }
+    store.set(VOTED_KEY, choice);
+    updatePollUI(); closeModal();
+  });
+}
+$('pollModal').addEventListener('click', e => { if (e.target.id === 'pollModal') closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+updatePollUI();
+// النافذة تظهر مرة واحدة فقط لكل متصفح، ما لم يصوّت
+if (!store.get(VOTED_KEY) && !store.get(POPUP_KEY)) {
+  setTimeout(() => { store.set(POPUP_KEY, '1'); openModal(); }, 1200);
+}
+
+// ظهور تدريجي عند التمرير
+const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target);} }), {threshold:.12});
+document.querySelectorAll('.fade').forEach(el => io.observe(el));
+document.querySelectorAll('#menu a').forEach(a => a.addEventListener('click', () => $('menu').classList.remove('open')));
+</script>
+</body>
+</html>
