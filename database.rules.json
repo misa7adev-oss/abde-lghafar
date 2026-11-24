@@ -1,0 +1,24 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "public": {
+      ".read": true,
+      ".write": "auth != null && auth.uid === 'xDS6yt1bFWeTtDNKvWoiUZvpymJ2'"
+    },
+    "messages": {
+      ".read": "auth != null && auth.uid === 'xDS6yt1bFWeTtDNKvWoiUZvpymJ2'",
+      "$messageId": {
+        ".write": "(!data.exists() && newData.exists()) || (auth != null && auth.uid === 'xDS6yt1bFWeTtDNKvWoiUZvpymJ2')",
+        ".validate": "newData.hasChildren(['name','contact','topic','message','createdAt','status'])",
+        "name": { ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 80" },
+        "contact": { ".validate": "newData.isString() && newData.val().length <= 120" },
+        "topic": { ".validate": "newData.isString() && newData.val().length <= 100" },
+        "message": { ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 2000" },
+        "createdAt": { ".validate": "newData.isNumber()" },
+        "status": { ".validate": "newData.val() === 'new' || (auth != null && auth.uid === 'xDS6yt1bFWeTtDNKvWoiUZvpymJ2' && newData.val() === 'read')" },
+        "$other": { ".validate": false }
+      }
+    }
+  }
+}

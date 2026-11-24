@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="فضاء تعريفي بالمترشح يعقوب عبد الغفار - بلدية مزاورو">
+  <title>يعقوب عبد الغفار | بلدية مزاورو</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap nav">
+  <a class="brand" href="#"><span class="logo">ي</span><span>يعقوب عبد الغفار<small>بلدية مزاورو</small></span></a>
+  <nav><a href="#about">التعريف</a><a href="#program">البرنامج</a><a href="#news">النشاطات</a><a href="#contact">تواصل معنا</a></nav>
+  <a class="nav-contact" href="admin.html">دخول الإدارة</a>
+</div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid">
+  <div class="hero-copy"><span class="eyebrow">فضاء تعريفي بالمترشح للمجلس الشعبي البلدي</span>
+    <h1 id="candidateName">يعقوب عبد الغفار</h1><p class="location">📍 بلدية مزاورو</p>
+    <p class="party">حزب الكرامة · قائمة رقم 12</p>
+    <p class="hero-desc">منصة للتعريف بالمترشح، وعرض المعلومات والنشاطات والمقترحات المحلية، واستقبال انشغالات المواطنين.</p>
+    <div class="actions"><a class="btn" href="#program">استعراض المجالات</a><a class="btn btn-light" href="#contact">إرسال انشغال</a></div>
+  </div>
+  <div class="portrait"><img src="assets/candidate.png" alt="صورة المترشح ببدلة رسمية"></div>
+</div></section>
+<div class="wrap facts"><div><b>APC</b><span>المجلس الشعبي البلدي</span></div><div><b>12</b><span>رقم القائمة وفق الملصق</span></div><div><b>مزاورو</b><span>البلدية</span></div><div><b>فضاء تواصلي</b><span>رسائل المواطنين</span></div></div>
+<section id="about" class="section wrap"><div class="section-head"><span>التعريف</span><h2>من هو المترشح؟</h2></div><div class="about-card"><p id="aboutText">فضاء تعريفي بالمترشح ومساره وأفكاره ومقترحاته لخدمة بلدية مزاورو.</p><p class="note">تُنشر المعلومات بعد مراجعتها واعتمادها من صاحب الموقع.</p></div></section>
+<section id="program" class="section soft"><div class="wrap"><div class="section-head"><span>مجالات مقترحة</span><h2>البرنامج والاهتمامات المحلية</h2><p>مجالات أولية قابلة للتعديل من لوحة الإدارة، وليست وعوداً انتخابية مؤكدة.</p></div><div id="programList" class="cards"><div class="empty">جارٍ تحميل المجالات...</div></div></div></section>
+<section id="news" class="section wrap"><div class="section-head"><span>آخر المستجدات</span><h2>النشاطات والأخبار</h2></div><div id="newsList" class="news-grid"><div class="empty">جارٍ تحميل الأخبار...</div></div></section>
+<section id="contact" class="section soft"><div class="wrap contact-grid">
+  <div><div class="section-head"><span>فضاء التواصل</span><h2>انشغالات المواطنين</h2></div><p>أرسل اقتراحاً أو انشغالاً متعلقاً بالشأن المحلي. لا تكتب معلومات حساسة أو بيانات شخصية غير ضرورية.</p><div class="contact-note">تُحفظ الرسائل في قاعدة البيانات، ولا يطّلع عليها إلا مدير الموقع المخوّل.</div></div>
+  <form id="messageForm" class="form">
+    <label>الاسم<input name="name" maxlength="80" required></label>
+    <label>وسيلة التواصل (اختياري)<input name="contact" maxlength="120"></label>
+    <label>موضوع الرسالة<select name="topic"><option>نظافة وبيئة</option><option>طرقات وإنارة</option><option>مدارس ومرافق</option><option>شباب ورياضة</option><option>تنمية محلية</option><option>اقتراح آخر</option></select></label>
+    <label>تفاصيل الرسالة<textarea name="message" rows="5" maxlength="2000" required></textarea></label>
+    <label class="check"><input type="checkbox" required> أوافق على استخدام المعلومات التي أدخلتها للرد على انشغالي.</label>
+    <button class="btn" type="submit">إرسال الرسالة</button><p id="formStatus" class="form-status" aria-live="polite"></p>
+  </form>
+</div></section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> يعقوب عبد الغفار · بلدية مزاورو <span>موقع تعريفي مستقل، وليس موقعاً رسمياً للإدارة البلدية.</span></div></footer>
+<script type="module" src="assets/app.js"></script>
+</body></html>

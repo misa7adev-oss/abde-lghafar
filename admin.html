@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>لوحة إدارة الموقع</title><link rel="stylesheet" href="assets/style.css"></head>
+<body class="admin-page">
+<header class="admin-top"><div class="wrap flex-between"><b>لوحة إدارة الموقع</b><a href="index.html">العودة إلى الموقع</a></div></header>
+<main class="wrap admin-main">
+  <section id="loginPanel" class="login-box"><h1>دخول الإدارة</h1><p>هذه الصفحة مخصصة لمدير الموقع.</p>
+    <form id="loginForm"><label>البريد الإلكتروني<input type="email" name="email" autocomplete="username" required></label><label>كلمة المرور<input type="password" name="password" autocomplete="current-password" required></label><button class="btn">تسجيل الدخول</button><p id="loginStatus" class="form-status" aria-live="polite"></p></form>
+  </section>
+  <section id="dashboard" hidden>
+    <div class="flex-between"><h1>إدارة محتوى الموقع</h1><button id="logoutBtn" class="danger-btn">تسجيل الخروج</button></div>
+    <p id="adminStatus" class="form-status" aria-live="polite"></p>
+    <section class="admin-panel"><h2>نبذة المترشح</h2><form id="aboutForm"><textarea id="aboutInput" rows="5" maxlength="3000" required></textarea><button class="btn">حفظ النبذة</button></form></section>
+    <section class="admin-panel"><h2>إضافة مجال للبرنامج</h2><form id="programForm"><label>العنوان<input name="title" maxlength="120" required></label><label>التفاصيل<textarea name="body" rows="3" maxlength="1000" required></textarea></label><button class="btn">إضافة المجال</button></form><div id="adminProgram" class="admin-list"></div></section>
+    <section class="admin-panel"><h2>نشر خبر أو نشاط</h2><form id="postForm"><label>العنوان<input name="title" maxlength="180" required></label><label>التفاصيل<textarea name="body" rows="4" maxlength="5000" required></textarea></label><button class="btn">نشر الخبر</button></form><div id="adminPosts" class="admin-list"></div></section>
+    <section class="admin-panel"><h2>رسائل المواطنين</h2><div id="adminMessages"><p>تحميل الرسائل...</p></div></section>
+  </section>
+</main>
+<script type="module" src="assets/admin.js"></script></body></html>
